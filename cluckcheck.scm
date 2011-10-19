@@ -18,6 +18,6 @@
 (define (for-all property . generators)
 	(let ((values (map (lambda (x) (map (lambda (f) (f)) generators)) (iota 100))))
 		(let ((failure (find (lambda (vs) (not (apply property vs))) values)))
-			(if (> (length failure) 0)
+			(if (list? failure)
 				(display (format "*** Failed!\n~a\n" failure))
-				(display (format "+++ OK, passed 100 tests"))))))
+				(display (format "+++ OK, passed 100 tests\n"))))))
