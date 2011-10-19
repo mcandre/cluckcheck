@@ -4,7 +4,7 @@ exec csi -ss $0 ${1+"$@"}
 exit
 |#
 
-(import cluckcheck)
+(use (prefix cluckcheck cluckcheck:))
 
 (define (is-even n)
 	(= 0 (modulo n 2)))
