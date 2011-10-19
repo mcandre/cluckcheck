@@ -4,6 +4,10 @@ HOMEPAGE
 
 [http://www.yellosoft.us/quickcheck](http://www.yellosoft.us/quickcheck)
 
+DOCUMENTATION
+
+[https://wiki.call-cc.org/eggref/4/cluckcheck](https://wiki.call-cc.org/eggref/4/cluckcheck)
+
 EXAMPLE
 
 	$ ./example.scm 
