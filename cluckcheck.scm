@@ -1,7 +1,7 @@
 (module cluckcheck (gen-int gen-bool gen-char gen-list gen-string for-all)
 	(import scheme chicken extras)
 
-	(require-extension srfi-1) ; lists
+	(use srfi-1) ; lists
 
 	(define (gen-int)
 		(random 256))
