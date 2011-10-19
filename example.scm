@@ -4,14 +4,13 @@ exec csi -ss $0 ${1+"$@"}
 exit
 |#
 
-(load "cluckcheck")
-(import (prefix cluckcheck cluckcheck:))
+(import cluckcheck)
 
 (define (is-even n)
 	(= 0 (modulo n 2)))
 
 (define (gen-even)
-	(let ((n (cluckcheck#gen-int)))
+	(let ((n (cluckcheck:gen-int)))
 		(if (not (= 0 (modulo n 2)))
 			(+ n 1)
 			n)))
