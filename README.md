@@ -8,5 +8,6 @@ EXAMPLE
 
 	$ ./example.scm 
 	*** Failed!
-	(121)
+	(125)
+	+++ OK, passed 100 tests
 	+++ OK, passed 100 tests
