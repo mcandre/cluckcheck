@@ -9,6 +9,8 @@ exit
 
 	(display (format "Random integer: ~a\n" (gen-int)))
 
+	(display (format "Random boolean: ~a\n" (gen-bool)))
+
 	; ...
 
 	(exit))
