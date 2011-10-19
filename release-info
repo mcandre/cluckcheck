@@ -1,0 +1,4 @@
+(repo git "git://github.com/mcandre/cluckcheck.git")
+
+(uri targz "https://github.com/mcandre/cluckcheck/tarball/master")
+(release "0.0")
