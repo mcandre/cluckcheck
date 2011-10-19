@@ -19,11 +19,7 @@ exit
 	(string=? s (list->string (reverse (reverse (string->list s))))))
 
 (define (main args)
-
 	(for-all is-even gen-int)
-
 	(for-all is-even gen-even)
-
 	(for-all reversible gen-string)
-
 	(exit))
