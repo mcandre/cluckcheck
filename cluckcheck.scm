@@ -4,4 +4,7 @@
 (define (gen-bool)
 	(= (random 2) 0))
 
+(define (gen-char)
+	(integer->char (random 128)))
+
 ; ...

@@ -11,6 +11,8 @@ exit
 
 	(display (format "Random boolean: ~a\n" (gen-bool)))
 
+	(display (format "Random char: ~a\n" (gen-char)))
+
 	; ...
 
 	(exit))
