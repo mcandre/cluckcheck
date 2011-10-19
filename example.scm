@@ -4,7 +4,8 @@ exec csi -ss $0 ${1+"$@"}
 exit
 |#
 
-(load "cluckcheck.scm")
+(load "cluckcheck")
+(import (prefix cluckcheck cluckcheck:))
 
 (define (is-even n)
 	(= 0 (modulo n 2)))
@@ -19,7 +20,7 @@ exit
 	(string=? s (list->string (reverse (reverse (string->list s))))))
 
 (define (main args)
-	(cluckcheck#for-all is-even cluckcheck#gen-int)
-	(cluckcheck#for-all is-even gen-even)
-	(cluckcheck#for-all reversible cluckcheck#gen-string)
+	(cluckcheck:for-all is-even cluckcheck:gen-int)
+	(cluckcheck:for-all is-even gen-even)
+	(cluckcheck:for-all reversible cluckcheck:gen-string)
 	(exit))

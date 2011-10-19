@@ -1,4 +1,4 @@
-(module cluckcheck (gen-int gen-bool gen-char gen-list for-all)
+(module cluckcheck (gen-int gen-bool gen-char gen-list gen-string for-all)
 	(import scheme chicken extras)
 
 	(require-extension srfi-1) ; lists
