@@ -13,6 +13,8 @@ exit
 
 	(display (format "Random char: ~a\n" (gen-char)))
 
+	(display (format "Random string: ~a\n" (gen-string)))
+
 	; ...
 
 	(exit))
