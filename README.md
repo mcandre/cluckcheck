@@ -10,7 +10,8 @@ DOCUMENTATION
 
 EXAMPLE
 
-	$ ./example.scm 
+	$ chicken-install cluckcheck
+	$ ./example.scm
 	*** Failed!
 	(125)
 	+++ OK, passed 100 tests
