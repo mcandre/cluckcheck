@@ -1,14 +1,14 @@
-cluckcheck - a Chicken Scheme port of the QuickCheck unit test framework
+# cluckcheck - a Chicken Scheme port of the QuickCheck unit test framework
 
-HOMEPAGE
+## HOMEPAGE
 
 [http://www.yellosoft.us/quickcheck](http://www.yellosoft.us/quickcheck)
 
-DOCUMENTATION
+## DOCUMENTATION
 
 [https://wiki.call-cc.org/eggref/4/cluckcheck](https://wiki.call-cc.org/eggref/4/cluckcheck)
 
-EXAMPLE
+## EXAMPLE
 
 	$ chicken-install cluckcheck
 	$ ./example.scm
