@@ -1,4 +1,8 @@
-#!/usr/bin/env csi -ss
+#!/bin/sh
+#|
+exec csi -ss $0 ${1+"$@"}
+exit
+|#
 
 (use cluckcheck)
 

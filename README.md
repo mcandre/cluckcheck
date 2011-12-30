@@ -10,7 +10,7 @@
 
 ## EXAMPLE
 
-	$ chicken-install cluckcheck
+	$ sudo make install
 	$ ./example.scm
 	*** Failed!
 	(125)
