@@ -1,6 +1,6 @@
-all: install test
+all: test
 
-test: example.scm
+test: install example.scm
 	./example.scm
 
 install: cluckcheck.scm

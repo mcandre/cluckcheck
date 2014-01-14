@@ -1,18 +1,23 @@
 # cluckcheck - a Chicken Scheme port of the QuickCheck unit test framework
 
-## HOMEPAGE
+# HOMEPAGE
 
 [http://www.yellosoft.us/quickcheck](http://www.yellosoft.us/quickcheck)
 
-## DOCUMENTATION
+# DOCUMENTATION
 
 [https://wiki.call-cc.org/eggref/4/cluckcheck](https://wiki.call-cc.org/eggref/4/cluckcheck)
 
-## EXAMPLE
+# EXAMPLE
 
-	$ sudo make install
-	$ ./example.scm
+    $ make
+    ...
+	./example.scm
 	*** Failed!
 	(125)
 	+++ OK, passed 100 tests
 	+++ OK, passed 100 tests
+
+# INSTALL
+
+    $ chicken-install cluckcheck
