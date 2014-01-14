@@ -1,3 +1,8 @@
+all: install test
+
+test: example.scm
+	./example.scm
+
 install: cluckcheck.scm
 	chicken-install
 
