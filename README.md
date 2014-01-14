@@ -11,8 +11,7 @@
 # EXAMPLE
 
     $ make install
-    $ make test
-	./example.scm
+    $ csi example.scm
 	*** Failed!
 	(125)
 	+++ OK, passed 100 tests
