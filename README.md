@@ -8,6 +8,10 @@
 
 [https://wiki.call-cc.org/eggref/4/cluckcheck](https://wiki.call-cc.org/eggref/4/cluckcheck)
 
+# INSTALL
+
+    $ chicken-install cluckcheck
+
 # EXAMPLE
 
     $ make install
@@ -27,8 +31,11 @@
 * [Bundler](http://bundler.io/)
 * [Cucumber](http://cukes.info/)
 * [Guard](http://guardgem.org/)
+* [aspelllint](https://github.com/mcandre/aspelllint)
 
-# TESTING
+# DEVELOPMENT
+
+## Testing
 
 Ensure the example script works as expected:
 
@@ -50,6 +57,7 @@ Guard can automatically run testing when the code changes:
     $ guard -G Guardfile-cucumber
     ...
 
-# INSTALL
+## Spell Check
 
-    $ chicken-install cluckcheck
+    $ aspelllint
+    ...
