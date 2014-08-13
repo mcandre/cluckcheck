@@ -1,4 +1,4 @@
-#!/usr/bin/env csi -ss
+":"; exec csi -ss $0 ${1+"$@"}
 
 (use cluckcheck)
 
@@ -11,7 +11,14 @@
 (define (reversible s)
 	(string=? s (list->string (reverse (reverse (string->list s))))))
 
-(for-all even? gen-int)
-(for-all even? gen-even)
-(for-all reversible gen-string)
-(exit)
+(define (main args)
+	(for-all even? gen-int)
+	(for-all even? gen-even)
+	(for-all reversible gen-string)
+	(exit))
+
+(cond-expand
+ (chicken-compile-shared)
+ (compiling (main (command-line-arguments)))
+ (else))
+

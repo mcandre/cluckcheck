@@ -12,10 +12,11 @@
 
     $ chicken-install cluckcheck
 
+Note: Linux users may need to use `sudo chicken-install cluckcheck`.
+
 # EXAMPLE
 
-    $ make install
-    $ csi example.scm
+    $ csi -ss example.scm
 	*** Failed!
 	(125)
 	+++ OK, passed 100 tests
