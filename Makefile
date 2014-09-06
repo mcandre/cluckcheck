@@ -7,6 +7,11 @@ install: cluckcheck.scm
 uninstall:
 	chicken-uninstall -force cluckcheck
 
+lili:
+	bundle exec lili .
+
+lint: lili
+
 clean:
 	-rm *.so
 	-rm *.o
