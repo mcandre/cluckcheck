@@ -12,10 +12,6 @@ $ csi -ss example.scm
 
 See [example.scm](https://github.com/mcandre/cluckcheck/blob/master/example.scm) for more information.
 
-# HOMEPAGE
-
-http://www.yellosoft.us/quickcheck
-
 # DOCUMENTATION
 
 https://wiki.call-cc.org/eggref/4/cluckcheck
@@ -34,11 +30,11 @@ Note: Linux users may need to use `sudo chicken-install cluckcheck`.
 
 ## Optional
 
-* [Ruby](https://www.ruby-lang.org/) 2.3+
-* [Bundler](http://bundler.io/)
+* [ruby](https://www.ruby-lang.org/) 2.3+
 * [Cucumber](http://cukes.info/)
-* [Guard](http://guardgem.org/)
 * [aspelllint](https://github.com/mcandre/aspelllint)
+* [pargs](https://github.com/mcandre/pargs)
+* [editorconfig-tools](https://www.npmjs.com/package/editorconfig-tools)
 
 # DEVELOPMENT
 

@@ -1,6 +1,4 @@
-(
-(license "BSD")
-(category testing)
-(author "Andrew Pennebaker")
-(synopsis "A Chicken Scheme port of the QuickCheck unit test framework")
-)
+((license "BSD")
+ (category testing)
+ (author "Andrew Pennebaker")
+ (synopsis "A Chicken Scheme port of the QuickCheck unit test framework"))
