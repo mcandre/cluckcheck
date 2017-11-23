@@ -16,7 +16,15 @@
 		(map (lambda (x) (gen)) (iota (random 100))))
 
 	(define (gen-string)
-		(list->string (gen-list gen-char)))
+    (list->string (gen-list gen-char)))
+
+  (define (gen-s-expression gen)
+  ((lambda (r)
+    (cond
+      ((= r 0) (quote ()))
+      ((= r 1) (gen))
+      (else (map (lambda (x) (gen-s-expression gen)) (iota 3))))
+  ) (random 3)))
 
 	(define (for-all property . generators)
 		(let ((values (map (lambda (x) (map (lambda (f) (f)) generators)) (iota 100))))
