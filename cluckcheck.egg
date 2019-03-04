@@ -1,0 +1,8 @@
+((license "BSD")
+ (category testing)
+ (author "Andrew Pennebaker")
+ (synopsis "A Chicken Scheme port of the QuickCheck unit test framework")
+ (dependencies srfi-1)
+ (components
+  (extension cluckcheck
+   (modules cluckcheck))))
