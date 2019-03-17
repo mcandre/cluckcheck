@@ -1,6 +1,9 @@
 ":"; exec csi -ss $0 ${1+"$@"}
 
-(use cluckcheck)
+(import scheme)
+(cond-expand
+  (chicken-5 (import cluckcheck))
+  (else (use cluckcheck)))
 
 (define (gen-even)
   (let ((n (gen-int)))
